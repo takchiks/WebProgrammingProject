@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');/* CSS Document */
 
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+        border-radius: 2px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(51, 153, 255); 
+      }
+
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(0, 0, 0);
+      }
 body 
 {
-	margin:0;
+	margin: 0;
+    padding: 0;
 	font-family: 'Sansita Swashed', cursive;
+	background-image:url('../image/background_4.gif');
+	background-size: cover;
+	background-position:center; 
+	background-repeat:	no-repeat; 
+	background-attachment: fixed;
 }
 
 #container
 {
 	width:100%;
-		   background-image: url('image/bnr.jpg');
-
+	background-image: url('image/bnr.jpg');
+	margin: 0;
+    padding: 0;
+	
+	
 }
 
 
@@ -23,9 +53,11 @@ body
 #navbar 
 {
   background-color:#39F;
-  position: fixed; /* Make it stick/fixed */
-  width: 98%; /* Full width */
-}
+  position: absolute; /* Make it stick/fixed */
+  width: 100%; /* Full width */
+  margin: 0;
+    padding: 0;
+ }
 
 #navbar a {
   float: left;
@@ -40,20 +72,46 @@ body
   color: black;
 }
 
-#content
-{
-	height:1120px;
-	background-color:#FFF;
-
-}
-
 #first-por
 {
 	height:500px;
 	background-color:#FFFFFF;
 }
+.bg-white{
+	background-color:white;
+}
+.box
+{
+	margin-left:1%;
+	float:left;
+	margin-top:20px;
+	transform:scale(1);
+	transition:all ease 0.5s;
+		
+}
+.box:hover
+{
+	transform::scale(0.95);
+	transition:all ease 0.5s;
+	border:solid 2px #CCC;
+	box-shadow:5px 5px 5px 5px #333333333;
+}
 
-
+.boxes-wrap
+{
+	display:flex;
+	flex-wrap:wrap;
+		
+}
+/*
+.boxes-wrap:hover
+{
+	transform::scale(0.95);
+	transition:all ease 0.5s;
+	border:solid 2px #CCC;
+	box-shadow:0px 0px 20px #333333333;
+}
+*/
 .square-box
 {
 	width:50%;
@@ -73,7 +131,7 @@ body
 	transform::scale(0.95);
 	transition:all ease 0.5s;
 	border:solid 2px #CCC;
-	box-shadow:0px 0px 20px #333333333;
+	box-shadow:20px 20px 20px 20px #333333333;
 }
 .sml-square-box
 {
@@ -130,11 +188,15 @@ body
 	box-shadow:0px 0px 20px #333333333;
 }
 
-
+/*
 .image-size
 {
 	height:100%;
 	width:100%;
+}*/
+.image-size{
+	max-width:100%;
+	height:auto;
 }
 
 .ql-box
@@ -201,4 +263,30 @@ ul
 .contact
 {
 text-align: center;	
+}
+.iframe{
+	margin-top:45px;
+	width:100%;
+	height:500px;
+	
+}
+.book-row{
+	width:100%;
+    display: flex;
+    flex-wrap: nowrap;
+	height:300px;
+	justify-content: center;
+	
+}
+.book-item{
+	max-width:25%;
+	height:80%;
+	padding:0.5%;
+}
+
+img{
+	margin:auto;
+	max-width:100%;
+	max-height:100%;
+	
 }
