@@ -93,19 +93,19 @@ body
 	-webkit-animation: cssAnimation 10s 1 ease;
 	-moz-animation: cssAnimation 10s 1 ease;
 	-o-animation: cssAnimation 10s 1 ease;
-	-webkit-transform: rotate(339deg) scale(0.892) skew(0deg) translate(-71px);
+	-webkit-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px);
 }
 @-webkit-keyframes cssAnimation {
 from { -webkit-transform: rotate(0deg) scale(0.989) skew(0deg) translate(18px); }
-to { -webkit-transform: rotate(339deg) scale(0.892) skew(0deg) translate(-71px); }
+to { -webkit-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px); }
 }
 @-moz-keyframes cssAnimation {
 from { -moz-transform: rotate(0deg) scale(0.989) skew(0deg) translate(18px); }
-to { -moz-transform: rotate(339deg) scale(0.892) skew(0deg) translate(-71px); }
+to { -moz-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px); }
 }
 @-o-keyframes cssAnimation {
 from { -o-transform: rotate(0deg) scale(0.989) skew(0deg) translate(18px); }
-to { -o-transform: rotate(339deg) scale(0.892) skew(0deg) translate(-71px); }
+to { -o-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px); }
 }
 
 .boxes-wrap
