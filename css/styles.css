@@ -43,6 +43,15 @@ body
 {
 	height:100px;
 	margin-left: 47%;
+}
+#logocontact
+{
+	height:100px;
+	margin-left: 5%;
+} 
+#logoadr
+{
+	height:100px;
 } 
 
 #navbar 
@@ -51,7 +60,8 @@ body
   position: absolute; /* Make it stick/fixed */
   width: 100%; /* Full width */
   margin: 0;
-    padding-left: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
 	
  }
 
@@ -60,7 +70,7 @@ body
   display: block;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 #navbar a:hover {
@@ -290,7 +300,41 @@ img{
 	margin-top:50px;
 }
 .center{
-	margin:auto;
-	justify-content:center;
-	text-align:center;
+	margin-left: 27em;
 }
+
+.typewriter_effect p {
+  animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+  overflow: hidden; /* Ensures the content does not come before the animation */
+  border-right: .15em solid blue; /*cursor */
+  white-space: nowrap; /* all content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .12em; 
+  
+}
+
+@keyframes typing
+ {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
